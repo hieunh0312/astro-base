@@ -1,0 +1,74 @@
+main {
+  width: 800px;
+  max-width: calc(100% - 2rem);
+  margin: auto;
+  padding: 1rem;
+
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.astro-a {
+  width: 220px;
+  height: auto;
+
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  z-index: -1;
+
+  transform: translatex(-50%);
+}
+
+h1 {
+  margin-bottom: 1em;
+
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.text-gradient {
+  background-image: var(--accent-gradient);
+  background-position: 0%;
+  -webkit-background-clip: text;
+  background-size: 400%;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.instructions {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(var(--accent-light), 25%);
+  border-radius: 8px;
+
+  background: linear-gradient(
+    rgba(var(--accent-dark), 66%),
+    rgba(var(--accent-dark), 33%)
+  );
+}
+
+.instructions code {
+  padding: 0.3em 0.4em;
+  border-radius: 4px;
+
+  background: rgba(var(--accent-light), 12%);
+  color: rgb(var(--accent-light));
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.instructions strong {
+  color: rgb(var(--accent-light));
+}
+
+.link-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+  gap: 2rem;
+
+  padding: 0;
+}
